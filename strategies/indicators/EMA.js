@@ -12,6 +12,7 @@ Indicator.prototype.update = function(price) {
   // ema, because we haven't calculated any yet.
   if(this.result === false)
     this.result = price;
+  console.log(price);
 
   this.age++;
   this.calculate(price);

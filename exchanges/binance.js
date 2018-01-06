@@ -400,6 +400,7 @@ Trader.getCapabilities = function() {
       'DASH',
       'ETH',
       'ETC',
+      'TRX',
       'EOS',
       'NEO',
       'OMG',
@@ -423,6 +424,11 @@ Trader.getCapabilities = function() {
       },
       {
         pair: ['BTC', 'DASH'],
+        minimalOrder: { amount: 0.001, unit: 'asset' },
+        precision: 0.000001,
+      },
+      {
+        pair: ['BTC', 'TRX'],
         minimalOrder: { amount: 0.001, unit: 'asset' },
         precision: 0.000001,
       },
